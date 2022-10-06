@@ -31,7 +31,7 @@ function AboutMe(){
       <div id='back-img'>
         <img src={perfil2} alt="perfil" id='perfil'/>
       </div>
-        <p id='informacion'>Hola, mi nombre es Rafael Juarez Flores, soy un programador web orientado al desarrollo FullStack que utiliza herramientas como HTML, CSS, JavaSript, React, Vue, Laravel, MySQL, Sass, Jquery.<br/>
+        <p id='informacion'>Hola, mi nombre es Rafael Juarez Flores, soy un programador web orientado al desarrollo FullStack que utiliza herramientas como HTML, CSS, JavaSript, React, Vue, Laravel, MySQL, Sass, Jquery.<br/><br />
         Me apasiona el mundo de la programacion y el poder crear todo tipo de software a traves de este, ya que me Parece entretenido y divertido, ademas del hecho de trabajar con mi creatividad para poder diseñar la parte visual de una página web y crear el código al desarollarlo</p>
       </div>
       <div className='MyExperience'>

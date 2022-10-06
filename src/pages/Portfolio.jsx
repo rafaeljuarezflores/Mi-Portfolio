@@ -1,8 +1,8 @@
 import catmania from '../images/catmania.png'
 import lizmandala from '../images/lizmandala.png'
 import LizYoga from '../images/lizyoga.png'
-import ponchos from '../images/ponchos.png'
-import myguitars from '../images/myguitars.png'
+import ponchos from '../images/ponchos-trujillo.png'
+import myguitars from '../images/myguitarss.es.png'
 import '../styles/Portfolio.scss'
 
 function Portfolio(){
