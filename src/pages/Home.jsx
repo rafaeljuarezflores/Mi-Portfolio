@@ -1,15 +1,15 @@
-import '../styles/Home.scss'
-import AboutMe from "../components/AboutMe"
-import Formulario from "../components/Contact"
-import Presentacion from '../components/Presentacion'
+import '../styles/Home.scss';
+import Presentacion from '../components/Presentacion';
+import Experiencia from '../components/Experiencia';
+import Portfolio from '../components/Portfolio';
 
 function Home() {
 
   return (
     <div className="App">
       <Presentacion/>
-      <AboutMe/>
-      <Formulario/>
+      <Experiencia/>
+      <Portfolio/>
     </div>
   )
 }

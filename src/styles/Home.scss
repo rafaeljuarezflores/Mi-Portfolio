@@ -1,8 +1,80 @@
-*{
+//Fuentes de letra------------------------------------------------------------
+
+@font-face {
+    font-family: SpaceMono;
+    src: url('../fonts/SpaceMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: sk_rounded_regular;
+    src: url('../fonts/sk-rounded-regular.ttf');
+}
+
+//---------------------------------------------------------------------------------
+
+
+
+body {
+    background: #343538;
+    font-family: SpaceMono;
+}
+
+.App {
+    padding: 28vh 13vw 5vh 13vw;
+    display: grid;
+    gap: 10vh;
+    // max-width: 480px;
+}
+
+* {
     margin: 0;
     color: white;
 }
 
-body{
-    background: rgb(39, 61, 61);
+h1 {
+    font-family: SpaceMono;
+    font-size: clamp(1.2em, 2.1vw, 2em);
+}
+
+button {
+    background: none;
+    list-style-type: none;
+    font-size: clamp(0.75em, 1vw, 1.5em);
+    text-align: center;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    padding: 0.6em 2.3em;
+    border-radius: 2em;
+    background: none;
+    border: 0.12vw solid white;
+}
+
+button:hover {
+    transform: scale(1.05, 1.05);
+}
+
+p {
+    font-family: sk_rounded_regular;
+    font-size: clamp(0.8em, 1.2vw, 1.5em);
+    color: #d1d0d0;
+}
+
+.backgdn_gray {
+    background: #4e4e4e;
+}
+
+a {
+    font-size: clamp(0.7em, 1.1vw, 1.4em);
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.05, 1.05);
+    color: #25f5d2;
+}
+
+@media (max-width:628px) {
+    .App {
+        padding: 17vh 5vw 5vh 5vw;
+    }
 }

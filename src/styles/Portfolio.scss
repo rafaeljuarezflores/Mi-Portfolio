@@ -1,70 +1,139 @@
-.contenedor-portfolio{
-    div{
+#flex_portfolio {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: auto 4fr;
+    gap: 2.5vw;
+
+    #navbar_portfolio {
+
+        flex-direction: column;
+        align-items: center;
         display: flex;
-        margin: 3em;
-        border: 2px solid white;
-        border-radius: 20px;
-        img{
-            width: 50%;
-            height: auto;
-            border-radius: 20px 0 0 20px;
+        gap: 2.3vh;
+
+        button {
+            width: 100%;
+            padding: 1em 3em;
+            border-radius: 0;
         }
-        p{
-            font-size: 2.3em;
-            display: block;
-            margin: auto;
-            padding: 1.5em;
-            
-            a{
-                display: inline-flex;
-            }
+
+        button:hover {
+            background: #b67d7d;
         }
+
     }
+
 }
 
-@media(max-width: 1934px){
-    .contenedor-portfolio{
-        div{
-            p{
-                font-size: 1.4em;
-            }
-        } 
-    }
-}
 
-@media(max-width: 1024px){
-    .contenedor-portfolio{
-        div{
-            p{
-                font-size: 1em;
-            }
-        } 
-    }
-}
+.contenedor-portfolio {
 
-@media(max-width: 768px){
-    .contenedor-portfolio{
-        div{
-            p{
-                font-size: 0.7em;
-            }
-        } 
-    }
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+    gap: 2.5vw;
 
-@media(max-width: 430px){
-    .contenedor-portfolio{
-        div{
-            flex-direction: column;
-            margin: 1em;
-            img{
+    .project_portfolio {
+        border: 0.15vw solid white;
+        display: grid;
+        grid-template-rows: auto 1fr;
+
+        .row_1_p_t {
+            border-bottom: 0.15vw solid white;
+            height: 30vh;
+
+            img {
+                object-position: top;
+                object-fit: cover;
                 width: 100%;
-                border-radius: 20px 20px 0 0;
+                height: 100%;
             }
-            p{
-                font-size: 1em;
-                text-align: justify;
+        }
+
+        .row_2_p_t {
+            justify-content: space-between;
+            padding: 1em 1.8em 1.2em 1.8em;
+            flex-direction: column;
+            display: flex;
+            gap: 0.8em;
+
+            .cont_txt_row {
+                display: grid;
+                gap: 2vh;
             }
-        } 
+
+            .row_1_project {
+                font-size: clamp(1.1em, 1.8vw, 1.4em);
+            }
+
+            .row_2_project {
+                font-size: clamp(0.9em, 1.1vw, 1.3em);
+                display: block;
+            }
+
+            .row_3_project {
+                justify-content: space-between;
+                padding-top: 0.8em;
+                flex-direction: row;
+                display: flex;
+                align-items: center;
+
+                .skills_project {
+
+                    img {
+                        margin-right: 1vw;
+                        width: 2.3vw;
+                        min-width: 1.5rem;
+                    }
+                }
+
+                a {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    border: 1px solid #ffffff;
+                    background: #343538;
+                    padding: 0.4em 1.8em;
+                    border-radius: 20px;
+                    text-align: center;
+                    display: block;
+                }
+
+                a:hover {
+                    background: none;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+#skills {
+    grid-template-columns: repeat(auto-fill, minmax(4.5vw, 1fr));
+
+    #skills_portofolio {
+        #skill_img {
+            aspect-ratio: 1;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
+
+@media (max-width: 730px) {
+    #flex_portfolio {
+        grid-template-columns: auto;
+        gap: 7vh;
+
+        #navbar_portfolio {
+            flex-direction: row;
+            gap: 3.5vw;
+
+            button{
+                height: 100%;
+                padding: auto;
+            }
+        }
     }
 }
