@@ -1,7 +1,7 @@
 import '../styles/Presentacion.scss';
 import perfil from '../images/perfil4.jpg';
 import linkedin from '../images/icons/Linkedin.png';
-import github from '../images/icons/GitHub-Light.png';
+import github from '../images/icons/Github-Light.png';
 
 function Presentacion() {
 
